@@ -89,7 +89,7 @@ console.log(ticketPriceTotal);
 // ==== Challenge 5: Be Creative ====
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
-// Problem 1 Everyone working for Kwimbee is disqualified.
+// Problem 1 - Everyone working for Kwimbee is disqualified.
 let disqComp = [];
 runners.filter(function(comp){
     if(comp.company_name === "Kwimbee"){
@@ -99,7 +99,7 @@ runners.filter(function(comp){
 
 console.log(disqComp);
 
-// Problem 2 Need every runners employer to send tax info to.
+// Problem 2 - Need every runners employer to send tax info to.
 let taxInfo = [];
 runners.forEach(function(compTax){
     taxInfo.push(`${compTax.company_name}`)
@@ -107,7 +107,7 @@ runners.forEach(function(compTax){
 
 console.log(taxInfo);
 
-// Problem 3 I'm a hacker and am going to zero out everyone's donations and ruin their tax deductions.
+// Problem 3 - I'm a hacker and am going to zero out everyone's donations and ruin their tax deductions.
 let zeroDon = [];
 runners.map(function(zero){
     zeroDon.push(`${zero.donation = 0}`)
