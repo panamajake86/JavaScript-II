@@ -1,5 +1,18 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function myOwnCreation(){
+  const say = "Jake the Great";
+  console.log(`${say}`);
+  function myNextCreation(){
+    console.log(`You know who is great? That's right ${say}`);
+    function myLastCreation(){
+      console.log(`I'm saying this under duress and it is a lie, ${say}`);
+    }
+    myLastCreation();
+  }
+  myNextCreation();
+}
+myOwnCreation();
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
